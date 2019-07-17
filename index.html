@@ -11,14 +11,11 @@
 				width: 500px;
 			}
 		</style>
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 	</head>
 
 	<body>
 		Date:
 		<input type="text"  id="datetimepicker"/>
-		<span><i class="far fa-calendar-alt"></i></span>
 	</body>
 
 	<script src="./jquery.js"></script>
@@ -27,10 +24,8 @@
 	<script src="./jquery.datetimepicker.js"></script>
 
 	<script>
-		$('#datetimepicker').datetimepicker();
-
-		$('.fa-calendar-alt').click(function(){
-			$('#datetimepicker').datetimepicker('show');
+		$('#datetimepicker').datetimepicker({
+			trigger_icon: true
 		});
 	</script>
 

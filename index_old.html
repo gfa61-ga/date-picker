@@ -9,7 +9,7 @@
 	background-color: red !important;
 }
 
-.input{	
+.input{
 }
 .input-wide{
 	width: 500px;
@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-	
+
 	<p><a href="http://xdsoft.net/jqplugins/datetimepicker/">Homepage</a></p>
 	<h3>DateTimePicker</h3>
 	<input type="text" value="" id="datetimepicker"/><br><br>
@@ -106,7 +106,7 @@ startDate:	'1986/01/05'
 });
 $('#datetimepicker').datetimepicker({value:'2015/04/15 05:03', step:10});
 
-$('.some_class').datetimepicker();
+$('.some_class').datetimepicker({trigger_icon: true}	);
 
 $('#default_datetimepicker').datetimepicker({
 	formatTime:'H:i',
@@ -128,7 +128,8 @@ $('#datetimepicker_mask').datetimepicker({
 $('#datetimepicker1').datetimepicker({
 	datepicker:false,
 	format:'H:i',
-	step:5
+	step:5,
+	trigger_icon: true
 });
 $('#datetimepicker2').datetimepicker({
 	yearOffset:222,
@@ -218,7 +219,7 @@ $('#datetimepicker12').datetimepicker({
 		return [true, ""];
 	}
 });
-$('#datetimepicker_dark').datetimepicker({theme:'dark'})
+$('#datetimepicker_dark').datetimepicker({theme:'dark', trigger_icon: true})
 
 
 </script>
